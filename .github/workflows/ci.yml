@@ -1,4 +1,4 @@
-name: Docker CI - Build and Push Hello Service to GHCR
+name: Docker CI - Build and Push Weather Service to GHCR
 
 on:
   push:
@@ -7,9 +7,9 @@ on:
   workflow_dispatch:
 
 env:
-  IMAGE_NAME: hello-service
+  IMAGE_NAME: weather-service
   REGISTRY: ghcr.io
-  GHCR_PATH: ${{ github.repository_owner }}/hello-service
+  GHCR_PATH: ${{ github.repository_owner }}/weather-service
 
 jobs:
   build-and-push:
