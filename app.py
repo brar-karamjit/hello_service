@@ -7,7 +7,7 @@ OPEN_METEO_URL = os.getenv("OPEN_METEO_URL", "https://api.open-meteo.com/v1/fore
 
 @app.route('/')
 def hello():
-    return 'Hello Service online — cross-app call succeeded.'
+    return 'Weather Service app online — cross-app call succeeded.'
 
 
 @app.route('/weather')
